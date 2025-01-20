@@ -993,6 +993,7 @@ def _create_thread(
         if db_data.compressed_chunk_type == models.DataChoice.IMAGESET:
             first_image_idx = db_data.start_frame
             if not is_data_in_cloud:
+                print(first_image_idx)
                 w, h = extractor.get_image_size(first_image_idx)
             else:
                 img_properties = manifest[first_image_idx]
