@@ -1,0 +1,8 @@
+services:
+  cvat_server:
+    environment:
+      DJANGO_SETTINGS_MODULE: settings
+      UI_SCHEME: ${UI_SCHEME}
+      UI_HOST: ${UI_HOST}
+    volumes:
+      - ./local-settings.py:/home/django/settings.py:ro
