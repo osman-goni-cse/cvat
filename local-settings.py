@@ -1,5 +1,5 @@
 # Overlaying production
-from cvat.settings.production import *
+from cvat.settings.production import * # pylint: disable=wildcard-import
 
 UI_SCHEME = os.environ.get("UI_SCHEME", "http")
 UI_HOST = os.environ.get("UI_HOST", "localhost")
